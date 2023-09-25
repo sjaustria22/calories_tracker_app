@@ -1,38 +1,159 @@
 .App {
-  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #f4f4f4f4;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app_navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  width: 100%;
+  height: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+span {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app_controls_counter {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+}
+
+.app_controls_delete {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+}
+
+.btn_delete_all {
+  font-size: 18px;
+  background: red;
+  color: #fff;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.app_controls {
+  width: 50%;
+  height: 150px;
+  margin: 50px auto;
+}
+
+.app_controls_inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app_controls_inputs input {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.app_controls_inputs button {
+  padding: 5px;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  background: red;
+  margin: 10px auto;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.app_meals_container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app_meals_container_wrapper {
+  height: auto;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app_meals_container_wrapper_inner {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+.btn_delete_meal {
+  padding: 5px;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: red;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.app_modal {
+  width: 300px;
+  height: 250px;
+  background: #f4f4f4;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+}
+
+.btn_close_modal {
+  padding: 5px;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  width: 90%;
+}
+
+.app_meals_container_select select {
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
